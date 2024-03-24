@@ -25,7 +25,7 @@ def train(model, loss_fn, optimizer, epochs, train_loader, output_dir, val_loade
                 label = torch.flatten(label).to(device)
                 
                 loss = loss_fn(pred, label)
-                loss = torch.sum(loss) / loss.size[0]
+                loss = torch.sum(loss) / loss.shape[0]
                 
                 total_loss += loss / len(predictions)
             

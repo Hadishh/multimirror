@@ -8,14 +8,14 @@
             "name": "Python Debugger: Module",
             "type": "debugpy",
             "request": "launch",
-            "module": "src.evaluation",
+            "module": "src.train",
             "args": [
-                // "--train_data", "/home/hadisheikhi77/multimirror/data/fa/train.tsv",
-                // "--output_dir", "/home/hadisheikhi77/multimirror/output",
-                // "--epoch", "1",
+                "--train_data", "data/fa/train.tsv",
+                "--output_dir", "output",
+                "--epoch", "1",
                 // "--batch_size", "16"
-                "--input", "/home/hadisheikhi77/multimirror/data/fa/train.tsv",
-                "--model_path", "/home/hadisheikhi77/multimirror/output/chackpoint.10.pt"
+                // "--input", "/home/hadisheikhi77/multimirror/data/fa/train.tsv",
+                // "--model_path", "/home/hadisheikhi77/multimirror/output/chackpoint.10.pt"
             ]
         }
     ]
