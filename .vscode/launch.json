@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.evaluation",
+            "args": [
+                // "--train_data", "/home/hadisheikhi77/multimirror/data/fa/train.tsv",
+                // "--output_dir", "/home/hadisheikhi77/multimirror/output",
+                // "--epoch", "1",
+                // "--batch_size", "16"
+                "--input", "/home/hadisheikhi77/multimirror/data/fa/train.tsv",
+                "--model_path", "/home/hadisheikhi77/multimirror/output/chackpoint.10.pt"
+            ]
+        }
+    ]
+}
