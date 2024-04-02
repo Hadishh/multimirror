@@ -6,7 +6,6 @@ import os
 
 from src.data.dataset import AlignmentDataset
 from src.model.multimirror_model import MultiMirror
-from src.utils import calculate_f1
 
 def __parse_prediction(prediction) -> str:
     l, k = prediction.shape[0], prediction.shape[1]
