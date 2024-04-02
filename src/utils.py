@@ -38,6 +38,6 @@ def calculate_prf(predictions, labels):
         p, r, f, _ = precision_recall_fscore_support(label, pred, average='binary')
         mean_f += f
         mean_p += p
-        mean_r = r
+        mean_r += r
     
     return mean_p / len(labels), mean_r / len(labels), mean_f / len(labels)
